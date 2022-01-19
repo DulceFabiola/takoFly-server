@@ -1,12 +1,12 @@
-//1. IMPORTACIONES
 const express = require("express");
 const app = express();
 require("dotenv").config();
+const cors = require("cors");
 
-//2.MIDDLEWARES
+app.use(cors());
+app.use(express.json());
 
-//3. RUTAS
-
+app.use("/airports", require("./routes/airports.js"));
 //4. SERVER
 app.listen(process.env.PORT, () => {
   console.log(
