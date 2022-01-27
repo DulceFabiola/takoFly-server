@@ -15,7 +15,6 @@ $ npm install
 ```
 PORT=3000
 MONGODB='THE URL_DB'
-APP_APIKEY='APP_APIKEY'
 ```
 
 ## Instalación de librerías
@@ -40,7 +39,7 @@ $ npm run dev
 
 ## USO DE EP's
 
-Los servicios se consumen desde la API de Aero Api. [Aero Api](https://es.flightaware.com/aeroapi/portal/documentation#tag--flights)
+Los servicios se consumen desde la API de. [TakoFly](https://takofly.herokuapp.com)
 
 ##### API
 
