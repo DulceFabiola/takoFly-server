@@ -46,7 +46,17 @@ Los servicios se consumen desde la API de. [TakoFly](https://takofly.herokuapp.c
 -Get Airports
 
 ```shell
-curl --location --request GET 'https://takofly.herokuapp.com/airports' \
---header 'x-apikey: 'APIKEY' \
---header 'APIKEY'
+curl --location --request GET 'https://takofly.herokuapp.com/airports/readAll'
+```
+
+-Get Flights
+
+```shell
+curl --location --request GET 'https://takofly.herokuapp.com/flights/readAll'
+```
+
+-Get Flight Details
+
+```shell
+curl --location --request GET 'https://takofly.herokuapp.com/flights/readone/:idFlight'
 ```
