@@ -9,7 +9,9 @@ connectDB();
 app.use(cors());
 app.use(express.json());
 
-app.use("/airports", require("./routes/airports.js"));
+app.use("/airports", require("./routes/airports"));
+
+app.use("/flights", require("./routes/flights"));
 //4. SERVER
 app.listen(process.env.PORT, () => {
   console.log(

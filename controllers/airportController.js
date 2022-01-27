@@ -1,12 +1,12 @@
 //IMPORTACIONES
-const Flight = require("./../models/Flight");
+const Airports = require("./../models/Airports");
 
 //lEER AEROPUERTOS
 exports.getAllAirports = async (req, res) => {
   try {
-    const airports = await Flight.find({});
+    const airports = await Airports.find({});
     res.json({
-      msg: "Vuelos obtenidos con éxito",
+      msg: "Aereopuertos obtenidos con éxito",
       data: airports,
     });
   } catch (error) {
