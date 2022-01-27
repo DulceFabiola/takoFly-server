@@ -1,6 +1,6 @@
 //IMPORTACIONES
 const mongoose = require("mongoose");
-const Fligth = require("./../models/Flight");
+const Flight = require("./../models/Flight");
 
 require("dotenv").config();
 
@@ -11,7 +11,7 @@ mongoose.connect(process.env.MONGODB_URI, {
 });
 
 //DATOS A POBLAR
-const dataFligth = [
+const dataFlight = [
   {
     origin: "Acapulco",
     destiny: "Ciudad de México",
@@ -64,7 +64,7 @@ const dataFligth = [
 
 //DECLARAR FUNCIÓN
 const createFlight = async () => {
-  const newDataFlight = await Fligth.create(dataFligth);
+  const newDataFlight = await Flight.create(dataFlight);
   console.log(newDataFlight);
   mongoose.connection.close();
 };
