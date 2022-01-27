@@ -23,8 +23,8 @@ const flightSchema = mongoose.Schema({
     type: Number,
     required: true,
   },
-  seats: {
-    type: Number,
+  airportCode: {
+    type: String,
     required: true,
   },
   descripcion: String,

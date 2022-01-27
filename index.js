@@ -1,8 +1,11 @@
 const express = require("express");
 const app = express();
 require("dotenv").config();
+const connectDB = require("./config/db");
 const cors = require("cors");
 
+//Base de Datos
+connectDB();
 app.use(cors());
 app.use(express.json());
 

@@ -5,7 +5,7 @@ const Fligth = require("./../models/Flight");
 require("dotenv").config();
 
 //CONEXION A BD
-mongoose.connect(process.env.MONGODB, {
+mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -18,7 +18,7 @@ const dataFligth = [
     start: "8:35 AM",
     end: "9:40 AM",
     price: 1100,
-    seats: 180,
+    airportCode: "ACA",
   },
   {
     origin: "Acapulco",
@@ -26,7 +26,7 @@ const dataFligth = [
     start: "10:00 AM",
     end: "11:10 AM",
     price: 1100,
-    seats: 180,
+    airportCode: "ACA",
   },
   {
     origin: "Ciudad de México",
@@ -34,7 +34,7 @@ const dataFligth = [
     start: "2:00 PM",
     end: "3:10 PM",
     price: 1100,
-    seats: 180,
+    airportCode: "CDMX",
   },
   {
     origin: "Ciudad de México",
@@ -42,7 +42,7 @@ const dataFligth = [
     start: "8:00 PM",
     end: "9:10 PM",
     price: 1100,
-    seats: 180,
+    airportCode: "CDMX",
   },
   {
     origin: "Ciudad de México",
@@ -50,7 +50,7 @@ const dataFligth = [
     start: "11:20 PM",
     end: "2:15 AM",
     price: 2900,
-    seats: 180,
+    airportCode: "CDMX",
   },
   {
     origin: "Ciudad de México",
@@ -58,7 +58,7 @@ const dataFligth = [
     start: "5:55 AM",
     end: "9:00 AM",
     price: 2900,
-    seats: 180,
+    airportCode: "CDMX",
   },
 ];
 

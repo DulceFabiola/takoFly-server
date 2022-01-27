@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const airports = require("../controllers/airports");
+const { getAllAirports } = require("../controllers/airportController");
 
-router.get("/", airports.getAirports);
+router.get("/readall", getAllAirports);
 
 module.exports = router;
